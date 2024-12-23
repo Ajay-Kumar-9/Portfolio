@@ -1,0 +1,387 @@
+/* Navbar Css */
+
+html body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Navbar CSS */
+
+nav {
+  height: 3rem;
+  width: 100%;
+  background-color: cadetblue;
+  line-height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  float: right;
+}
+
+label {
+  font-size: 2rem;
+  color: white;
+}
+ul li {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 3rem;
+  gap: 4rem;
+  color: white;
+}
+
+nav ul li a {
+  font-size: 1.3rem;
+  margin-right: 2rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.checkbox {
+  float: right;
+  line-height: 3rem;
+  margin-right: 1rem;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* Mediaquery for hamburger */
+
+@media (max-width: 700px) {
+  .checkbox {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 6rem;
+    right: -100%;
+    height: 12rem;
+    width: 10rem;
+    background-color: cadetblue;
+    text-align: center;
+    z-index: 1000;
+    transition: right 0.5s ease;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+
+  #check:checked ~ ul {
+    right: 0;
+  }
+}
+
+/* About CSS */
+
+.about_div {
+  /* margin: 5rem 0 5rem 0; */
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about h1 {
+  padding: 3rem 0 0 3rem;
+}
+.about_skills {
+  font-size: 1.5rem;
+  padding: 3rem 0 0 3rem;
+}
+
+.image {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  clip-path: circle();
+  float: right;
+  margin: 2rem 2rem 0 0;
+}
+
+
+/* skills css */
+
+.container_div {
+  margin-top: 5rem;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.skills > div > img {
+  height: 100px;
+  width: 100px;
+}
+
+.skills > div {
+  height: 150px;
+  width: 150px;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0 0 1rem;
+}
+
+.github {
+  background-color: black;
+}
+.skills_heading {
+  text-align: center;
+  margin: 10rem 0 2rem 0;
+}
+
+.skills > div > p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* tools CSS */
+
+.tools_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 0 2rem 0;
+}
+
+.tools > div {
+  height: 150px;
+  width: 150px;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0 0 1rem;
+}
+
+.tools > div > img {
+  height: 100px;
+  width: 100px;
+}
+
+.tools > div > p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Project CSS */
+
+.card img {
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  height: 450px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.card-title {
+  font-size: 2rem;
+}
+
+.container > h1 {
+  text-align: center;
+}
+
+.card .card-text {
+  font-size: 1.2rem;
+}
+
+.card .card-body {
+  height: 8rem;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card .card-text {
+    font-size: 1rem;
+  }
+}
+
+/* Contact CSS */
+
+/* General container styles */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Contact section styles */
+#contact {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#contact h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Styles for image column */
+.contact-img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Connection column styles */
+.connection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Icon container styles */
+.icon {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual icon styles */
+.icon a {
+  font-size: 40px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.icon a:hover {
+  color: #007bff; /* Color on hover */
+}
+
+.linkedin {
+  color: blue;
+}
+.email {
+  color: red;
+}
+
+.icon >a>i:hover{
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #contact h1 {
+    font-size: 2rem;
+  }
+
+  .contact-img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .connection {
+    padding: 0 20px;
+  }
+
+  .icon a {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon a {
+    font-size: 30px;
+  }
+
+  #contact h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Media Queries for about section */
+
+@media (max-width: 800px) {
+  .about > h1 {
+    font-size: 1.5rem;
+  }
+  .about_skills {
+    font-size: 1rem;
+  }
+
+  .image {
+    margin: 4rem 0 0 3rem;
+  }
+  .about_div {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* MediaQuery for skills section */
+
+@media (max-width: 800px) {
+  .skills {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+/* MediaQuery for navbar section */
+
+@media (max-width: 800px) {
+  .wrapper_div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
